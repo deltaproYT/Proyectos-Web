@@ -1,0 +1,11 @@
+h1 {
+    /* Si utilizamos un #xxxxxx utilizaremos colores en formato HEXADECIMAL */
+    color: #14B9F2;
+    /* Si utilizamos rgb(xxx,yyy,zzz) utilizaremos colores en formato RGB */
+    border: rgb(159, 30, 146);
+    /* Tambien podemos utilizar colores predeterminados */
+    background-color: lightblue;
+    /* Tambien existe el rgba(xxx,yyy,zzz) para utilizar colores en formato RGB pero con completo control de la intensidad del color */
+    background: rgba(166, 136, 241, 0.20);
+}
+
