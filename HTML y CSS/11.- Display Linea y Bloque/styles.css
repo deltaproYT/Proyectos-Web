@@ -1,0 +1,18 @@
+.fondo {
+    background-color: #FFA47F;
+}
+
+/* .bloque {
+} */
+
+a {
+        background-color: #FF52A0;
+        display: block;
+        margin: 10px;
+}
+
+p {
+    display: inline-block;
+    background-color: #B500B2;
+
+}
