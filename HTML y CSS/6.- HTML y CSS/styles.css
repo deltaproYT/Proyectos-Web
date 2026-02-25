@@ -1,4 +1,4 @@
-h1 {
+h1 /*Nombre de la etiqueta*/{ 
     color: blueviolet;
     font-size: 20px;
 }
