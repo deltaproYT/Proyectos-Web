@@ -1,0 +1,17 @@
+#navigation {
+    font-size: 30px;
+    background-color: #5B23FF;
+}
+
+
+.columna {
+    background-color: aqua;
+    border-color: #982598;
+    padding: 20px;
+    width: 250px;
+    margin: 10px;
+}
+
+.padre {
+    display: flex;
+}
