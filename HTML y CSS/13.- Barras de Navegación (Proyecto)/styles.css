@@ -1,0 +1,17 @@
+#BarNav {
+    background-color: #5DD3B6;
+    padding: 10px;
+}
+
+.navegacion{
+    background-color: #6E5034;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navegacion:hover{
+    background-color: #704c2b;
+    padding: 11px 21px;
+}
