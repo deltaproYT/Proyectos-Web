@@ -1,0 +1,19 @@
+h1 {
+    background-color: rgb(244, 21, 214);
+    /* margin-(pos):; dependiendo la posicion, el margen se aplicara en la posicion donde hayamos puesto */
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+p {
+    background-color: blueviolet;
+    /* margin:; se pondran margenes dependiendo de los valores que se ingresen */
+    /* 
+    margin: (n)px; -- Pondra un margen en todos los lados de n pixeles 
+    margin: (n)px (m)px; -- Pondra un margen vertical de n pixeles y horizontal de m pixeles
+    margin: (a)px (b)px (c)px (d)px -- Pondra un margen vertical de a pixeles, margen derecho de b pixeles, margen inferior de c pixeles y margen izquierdo de d pixeles
+    */
+    margin-bottom: 700px;   
+    /* Y por ultimo el padding:; es para hacer margenes dentro del recuadro donde pertenece el texto */
+    padding: 100px;
+}
