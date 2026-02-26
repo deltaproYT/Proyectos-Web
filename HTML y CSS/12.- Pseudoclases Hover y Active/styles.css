@@ -1,0 +1,16 @@
+button {
+    background-color: blueviolet;
+    width: 160px;
+    height: 90px;
+    font-size: 25px;
+}
+
+/* La pseudoclase :hover permite hacer cambios en el estilo del elemento cuando se detecta la rueda del raton por encima del mismo */
+button:hover{
+    background-color: blue;
+}
+
+/* La pseudoclase :active permite hacer cambios en el estilo del elemento cuando se detecta un clic o interaccion con el mimso */
+button:active{
+    background-color: orange;
+}
