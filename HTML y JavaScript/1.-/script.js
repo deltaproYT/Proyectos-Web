@@ -81,3 +81,19 @@ function sumar2Numeros() {
 
 let resultadoFuncion = sumar2Numeros()
 console.log(resultadoFuncion)
+
+// Para poner argumetos en la funcion solo basta con escribirlo dentro de los parentesis de la misma
+
+function sumaDeDosNumeros(a,b){
+    return a + b
+}
+
+console.log(sumaDeDosNumeros(3, 5)) //Imprime el resultado de 3+5 = 8
+
+// Para saber los argumentos que estamos utilizando para lafuncion bastaria con utilizar un: arguments
+function multiplicacion(a, b){
+    console.log(arguments)
+    return a*b
+}
+
+console.log(multiplicacion(7,4,2,7,9))
