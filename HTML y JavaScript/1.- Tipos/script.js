@@ -1,6 +1,9 @@
 // Para escribir en la consola usamos el comando: console.log;
 console.log('Hola Mundo!');
 
+// Para concatenar dentro de un console.log podemos utilizar una coma
+console.log('Hola Mundo!', 'Adios Mundo!')
+
 // Para la declaracion utilizamos el comando: let [Nombre de variable] = [Dato];
 let variableString = 'Hola Mundo!';
 let variableInt = 10;
@@ -8,12 +11,18 @@ let variableBool = true;
 let variableNull = null;
 let variableVacia;
 
+// Nota: Tambien se pueden usar como datos operaciones
+let variableSuma = 7 + 3;
+
 // Para el cambio de dato de una variable solo basta con invocarla y cambiar su valor
 variableString = 'Adios Mundo!';
 variableInt = 20;
 variableBool = false;
 variableNull = 'Ahora tiene algo XD';
 variableVacia = 'Ahora tiene algo tambien XD';
+
+// Nota: tambien se pueden usar operaciones como dato
+variableSuma = variableSuma - 7;
 
 // Si queremos realizar una creacion de una variable con un dato constante, utilizaremos: const [nombre de la constante] = [Dato];
 const constante = 'Esto es una constante';
