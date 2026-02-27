@@ -62,3 +62,36 @@ console.log(a === '5') //Retorna false
 
 console.log(a != '5')  //Retorna false
 console.log(a !== '5') //Retorna true
+
+// Compuertas Logicas
+//Las compuertas logicas trabajan exclusivamente con booleanos
+// AND = &&
+console.log(true && true);      //Return true
+console.log(true && false);     //Return talse
+
+// OR = ||
+console.log(false || false);    //Return false
+console.log(true || false);     //Return true
+
+// NOT = !
+console.log(!true);             //Return false
+console.log(!false);            //Return true
+
+// Nota: si durante el uso de compuertas logicas usamos funciones, dependiendo la compuerta logica, la funcion puede ejecutarse o no
+// Ejemplo si una funcion f1 retorna false durante una comparacion f1 && f2, entonces f2 ya no sera ejecutado pues sin importar el resultado de f2, el resultado de la operacion completa sera false
+
+// Operadores Bitwise
+console.log(1 | 3) // 00000011 OR 00000001 = 00000011 = 3
+console.log(8 | 7) // 00001000 OR 00000111 = 00001111 = 15
+
+console.log(1 & 3) // 00000001 AND 00000011 = 00000001 = 1
+console.log(8 & 7) // 00001000 AND 00000111 = 00000000 = 0
+
+// Operador Ternario
+let condicion = true;
+let booleano = condicion == true ? 'Se cumplio la condicion' : 'No se cumplio la condicion';
+console.log(booleano);
+
+condicion = false;
+booleano = condicion == true ? 'Se cumplio la condicion' : 'No se cumplio la condicion';
+console.log(booleano);
