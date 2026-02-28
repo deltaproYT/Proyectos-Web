@@ -143,3 +143,31 @@ for (let i = 0; i < 20; i++) {
 
 contenedor.appendChild(fragmento)
 console.log(contenedor)
+
+// Metodos de obtencion y modificacion de childs
+const divContainer = document.querySelector('.Hijos')
+
+let primerHijo = divContainer.firstChild
+console.log(primerHijo)
+
+let ultimoHijo = divContainer.lastChild
+console.log(ultimoHijo)
+
+let primerHijoElemento = divContainer.firstElementChild
+console.log(primerHijoElemento)
+
+let ultimoHijoElemento = divContainer.lastElementChild
+console.log(ultimoHijoElemento)
+
+let soloElementosHTML = divContainer.children
+console.log(soloElementosHTML)
+
+let todosLosHijos = divContainer.childNodes
+console.log(todosLosHijos[0])
+console.log(todosLosHijos[1])
+console.log(todosLosHijos[2])
+console.log(todosLosHijos[3])
+console.log(todosLosHijos[4])
+console.log(todosLosHijos[5])
+console.log(todosLosHijos)
+
