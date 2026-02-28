@@ -15,6 +15,14 @@
     font-size: 30px;
 }
 
+#MenuBt:hover {
+    background-color: #8a5c32;
+}
+
+#MenuBt:active {
+    background-color: #b1651d;
+}
+
 .navegacion{
     background-color: #6E5034;
     color: #ffffff;
@@ -31,16 +39,19 @@
 @media (max-width: 600px) {
     #BarNav {
         flex-direction: column;
+        display: flex;
+    }
+   
+    .visible {
         display: none;
     }
+   
     #MenuBt {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        
-
     }
-    
+        
     .navegacion {
         margin: 5px;
     }
