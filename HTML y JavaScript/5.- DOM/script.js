@@ -171,3 +171,19 @@ console.log(todosLosHijos[4])
 console.log(todosLosHijos[5])
 console.log(todosLosHijos)
 
+
+// Metodos de childs
+// Replace --- Reemplaza un child por otro
+const parrafo = document.createElement('p')
+parrafo.innerHTML = 'Hola Mundo! Este es un parrafo'
+const h3Nuevo = document.createElement('h3')
+h3Nuevo.innerHTML = 'H3 Nuevo'
+
+let h2Actual = document.querySelector('.Hijos').getElementsByTagName('h3')[0]
+console.log(h2Actual)
+
+divContainer.replaceChild(h3Nuevo, h2Actual)
+console.log(h2Actual)
+
+// Remove --- Elimina un child
+divContainer.removeChild(h3Nuevo)
