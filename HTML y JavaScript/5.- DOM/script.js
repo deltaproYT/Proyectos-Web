@@ -114,3 +114,32 @@ console.log(h1Ejemplo.textContent)
 
 // Para ver el HTML de un elemento usaremos el comando
 console.log(h1Ejemplo.outerHTML)
+
+// Creacion de elementos
+// Para crear un elemento utilizamos:
+let contenedor = document.querySelector('.contenedor')
+
+const item = document.createElement('li') //Con este comando creamos un elemento en HTML desde JavaScript (Abrimos una etiqueta)
+
+const textoDelItem = document.createTextNode('Este es un item de la lista') // Con este comando creamos un Nodo de texto en HTML desde JavaScript (Sin asignar )
+
+item.appendChild(textoDelItem) // Con este comando adjuntamos el nodo de texto (hijo) dentro del nodo de elemento (padre)
+
+contenedor.appendChild(item) // Con este comando adjuntamos el nodo de lista (hijo) dentro del nodo de div (padre) 
+
+console.log(contenedor); // Imprimimos el nodo resultante //Resultado final del contenedor === <div class=\"contenedor\"><li>Este es un item de la lista</li></div>
+
+// Para crear un fragmento de codigo utilizaremos el siguiende comando
+
+contenedor = document.querySelector('.fragmento')
+
+const fragmento = document.createDocumentFragment();
+
+for (let i = 0; i < 20; i++) {
+    const item2 = document.createElement('li')
+    item2.innerHTML = 'Este es el item no [' + (i+1) + ']'
+    fragmento.appendChild(item2)
+}
+
+contenedor.appendChild(fragmento)
+console.log(contenedor)
