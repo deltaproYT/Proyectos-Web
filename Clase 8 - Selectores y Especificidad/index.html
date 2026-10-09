@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Selectores y Especificidad</title>
+</head>
+<body>
+    <h1>Selectores y Especificidad</h1>
+    <h2>Tipos de Selectores</h2>
+    <p>Los selectores son atributos que nos permiten dirigirnos hacia uno o varios elementos a la hora de decorar con el CSS, dentro de los selectores existen</p>
+    <ul>
+        <li><strong>Selectores de Etiqueta</strong></li>
+        <li><strong>Selectores de Clase</strong></li>
+        <li><strong>Selectores de ID</strong></li>
+    </ul>
+    
+    <h2>Selectores de Etiqueta</h2>
+    <p>Los selectores de etiqueta son selectores que funcionan con todas las instancias de un tipo de etiqueta en todo el documento html</p>
+    <p>Por ejemplo yo usare la etiqueta span para hacer la demostracion</p>
+    <p>Haremos que esta etiqueta tenga un color azul-violeta con una fuente arial</p>
+    <h3><strong>Codigo usado:</strong></h3>
+    <p>span {
+    color: blueviolet;
+    font-family: Arial;
+    }</p>
+    Lorem, ipsum dolor <span>sit amet consectetur</span> adipisicing elit. Laborum aliquid voluptate enim possimus, praesentium eum <span>pariatur fugiat</span>, nobis totam minima optio animi a similique id, odit nulla libero <span> vitae earum?</span>
+
+    <h2>Selectores de Clase</h2>
+    <p>Los selectores de clase son selectores que funcionan con todas las instancias que pertenezcan a una clase en especifico, la clase se define gracias al atributo class="" dentro de cualquier etiqueta, todas las etiquetas con la misma clase asignada pertenecen a esa clase</p>
+    <h3>Codigo usado:</h3>
+    <p>.clase {atributos}</p>
+    <p class="negrita">Este texto pertenece a la clase negrita</p>
+    <p class="resaltado">Este texto a la clase resaltado</p>
+    <p class="negrita">Este texto pertenece tambien a la negrita</p>
+    <p class="resaltado">Este texto tambien a la clase resaltado</p>
+
+    <h2>Selectores de ID</h2>
+    <p>Los selectores de ID son selectores que funcionan con la instancia que tenga el identificador seleccionado, se utiliza solo con una sola instancia en especifico</p>
+    <p>Por ejemplo hare que el siguiente parrafo tenga un subrayado con cursiva</p>
+    <h3>Codigo usado:</h3>
+    <p>#ID {atributo}</p>
+    <p id="especial">Este texto tiene un identificador unico</p>
+</body>
+</html>

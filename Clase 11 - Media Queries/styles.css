@@ -1,0 +1,17 @@
+nav[class="navigation-nav"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: blueviolet;
+    padding: 10px;
+}
+
+@media screen and (max-width: 500px) {  
+    nav[class="navigation-nav"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: blueviolet;
+        padding: 10px;
+    }
+}

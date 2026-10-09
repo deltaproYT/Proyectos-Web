@@ -1,0 +1,11 @@
+.flex {
+    display: flex;
+}
+
+.flex[id="nav-x"] {
+    flex-direction: row;
+}
+
+.flex[id="nav-y"] {
+    flex-direction: column;
+}

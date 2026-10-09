@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Selectores Avanzados</title>
+</head>
+<body>
+  <h1>Selectores Avanzados</h1>
+  
+  <h2>Selector de Atributos</h2>
+  <p>El selector de atributos como su nombre indica, selecciona instancias por sus atributos, en mi caso voy a seleccionar todas las instancias que tengan la palabra box en su clase para ponerle una tipografia arial y un fondo cian</p>
+  <p>El uso de *= hace que no busque coincidencias exactas sino que busque coincidencias parciales, en caso de no usarlo, la pagina solo buscara las coincidencias totales</p>
+  
+  <h3><strong>Comando Utilizado:</strong></h3>
+  <p>div[class*="box"] {
+  font-family: Arial;
+  background-color: aqua;
+  }</p>
+  
+  <div class="top-box">
+    <p>Clase = top-box</p>
+  </div>
+
+  <div class="middle-box">
+    <p>Clase = middle-box</p>
+  </div>
+
+  <div class="bottom-box">
+    Clase = bottom-box
+  </div>
+
+  <h2>Selector de Hijo Directo</h2>
+  <p>El Selector de hijo directo permite seleccionar solo los herederos de la etiqueta padre que hayan sido especificados, de ese modo no heredar el estilo a modelos que no lo necesitan</p>
+  <p>En este caso pondre tipografia Georgia a todo el nav, pero solo le pondre borde verde al div y al p</p>
+
+  <h3><strong>Comando Utilizado:</strong></h3>
+  <p>nav {
+    font-family: Georgia;
+  }
+  nav > div > p {
+    margin: 15px;
+    border: solid lightgreen 25px;
+  }
+  </p>
+
+  <nav>
+    <div>
+      <p>Texto fuera del ul</p>
+      <span>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </span>
+    </div>
+  </nav>
+
+  <h2>Selector de Hermanos Adyacentes</h2>
+  <p>Los operadores de Hermanos adyacentes son 2, el "+" selecciona a la siguiente instancia hermana, mientras que el operador "~" elige a todos los hermanos generales posteriores </p>
+  <p>En este caso utilizare el operador + en el iem 2 asignandole a la siguiente instancia el color aquamarina junto con un margen superior de 20px, mientras que utilizare el operador "~" en el item 7 para asignar a las siguientes instancias el color chocolate y asignar un margen superior de 5px</p>
+
+  <h3><strong>Comando Utilizado:</strong></h3>
+  <p>#item2 + li {
+    color: aquamarine;
+    margin-top: 20px;
+  }
+
+  #item7 ~ li {
+    color: chocolate;
+    margin-top: 5px;
+  }</p>
+  
+  <ul>
+    <li>Item 1</li>
+    <li id="item2">Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li id="item7">Item 7</li>
+    <li>Item 8</li>
+    <li>Item 9</li>
+    <li>Item 10</li>
+    <li>Item 11</li>
+    <li>Item 12</li>
+    <li>Item 13</li>
+  </ul>
+
+  <h2>Pseudoclases de Estado y Estructurales</h2>
+  <p>Las Pseudoclases de estado y estructurales permiten seleccionar objetos durante un estado temporal</p>
+  
+  <h3>Pseudoclases de Interaccion y Estado</h3>
+  
+  <h4>:hover</h4>
+  <p>La pseudoclase :hover realiza un cambio de estilo solo al mantener el cursor encima de la instancia</p>
+  <p>En este caso creare un div que al pasar el cursor encima de el va a cambiar su color por el rojo y su texto por el blanco</p>
+  
+  <h3><strong>Comando Utilizado:</strong></h3>
+  <p>#hover-div:hover {
+  background-color: red;
+  color: white;
+  }</p>
+  
+  <div id="hover-div">
+    <span>Hola Mundo !!!</span>
+  </div>
+  
+  <h4>:active</h4>
+  <p>La pseudoclase :active realiza un cambio de estilo solo al mantener el click encima de la instancia</p>
+  <p>En este caso creare un div que cuando haga click su color cambiara por el verde lima y el texto en negro</p>
+  
+  <h3><strong>Comando Utilizado:</strong></h3>
+  <p>
+    #active-div:active {
+  background-color: lime;
+  color: black;
+  }
+  </p>
+  
+  <div id="active-div">
+    <span>Adios Mundo!!!</span>
+  </div>
+  
+  <h4>:focus</h4>
+  <p>La pseudoclase :focus realiza un cambio de estilo solo cuando un campo de texto se encuentra activo</p>
+  <p>En este caso creare un input de tipo "text" donde al tenerlo activado dibujaremos un borde naranja con fondo lima con transparencia de 0.2</p>
+  
+  <h3><strong>Comando Utilizado:</strong></h3>
+  <p>
+    #focus-input:focus {
+  background-color: rgba(47, 255, 0, 0.2);
+  border: solid 1px rgb(255, 182, 46);
+  }
+  </p>
+
+  <input type="text" id="focus-input">
+  <p></p>
+  <h3>Pseudoclases Estructurales</h3>
+  
+  <h4>:first-child y :last-child</h4>
+  <p>Las pseudoclases first-child y last-child funcionan en listas (ul - ol) donde first-child va a afectar al primer item dentro de la lista mientras last-child afecta al ultimo item de la lista </p>
+  
+  <h3><strong>Comando Utilizado:</strong></h3>
+  <p>
+    #first-last-ul > li:first-child {
+  background-color: purple;
+  color: white;
+  } 
+
+  #first-last-ul > li:last-child {
+  background-color: yellow;
+  }
+  </p>
+  
+  <ul id="first-last-ul">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+  
+  <h4>:nth-child(n)</h4>
+  <p>La pseudoclase nth-child permite calcular dinamicamente una decoracion tomando en cuenta la posicion</p>
+  <p>Si se quiere trabajar con la posicion exacta de un objeto se puede reemplazar la "n" por un numero entero referente a la posicion a la que se desea realizar el estilo</p>
+  <p>En este caso usare el nth-child para seleccionar al segundo hijo de esta clase y le dare el color burlywood junto con el tamaño de fuente en 20px</p>
+  
+  <h3><strong>Comando Utilizado:</strong></h3>
+  <p>.nth-child-ul[id="nth-1"] li:nth-child(2) {
+  font-size: 20px;
+  color: burlywood
+  }</p>
+
+  <ul class="nth-child-ul" id="nth-1">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  
+  <p>Y si se quiere trabajar con posiciones intercaladas (como cada n numero de objetos) se puede trabajar con el intervalo seguido de la letra n</p>
+  <p>En este caso usare el nth-child para seleccionar cada 2 instancias en esta clase y le dare el color rosybrown junto con el tamaño de fuente de 10px</p>
+  
+  <h3><strong>Comando Utilizado:</strong></h3>
+  <p>.nth-child-ul[id="nth-2"] li:nth-child(2n) {
+    font-size: 10px;
+    color: rosybrown
+  }</p>
+  
+  <ul class="nth-child-ul" id="nth-2">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+  </ul>
+  
+  <h3>Pseudoclases logicas y relacionales</h3>
+  
+  <h4>:is y :where</h4>
+  <p>Cuando se repite mucho una instancia en CSS es mucho mas facil utilizar un :is() o :where(), los cuales permiten agrupar instancias iguales o con base similar, la unica diferencia radica en que el :where() tiene una especifidad de 0, es decir que cualquier cambio posterior se superpone al where</p>
+  
+  <h4>:not</h4>
+  <p>El :not() permite excluir elementos cuyos elementos coincidan con un selector especifico dentro del parentesis</p>
+  
+  <h4>:has</h4>
+  <p>El :has() identificar instancias padre segun las instancias hijas que tenga en su interior</p>
+  
+  <h2>Pseudoelementos para estilizar</h2>
+  <p>A diferencia de las pseudoclases los pseudoelementos actuan directamente sobre fragmentos especificos de un elemento o que permiten inyectar caracteristicas visuales</p>
+  
+  <h3>Partes Especificas</h3>
+  <p>Modifican porciones concretas del texto como:</p>
+  
+  <h4>::first-letter</h4>
+  <p>Afecta solo al primer caracter de la instancia</p>
+  <p>En este caso pondre una tipografia arial y tamaño de 25px a la primera letra </p>
+
+  <h3><strong>Comando Utilizado:</strong></h3>
+  <p>#first-letter-p::first-letter {
+  font-family: Arial;
+  font-size: 25px;
+  }</p>
+
+  <p>Ejemplo:</p>
+  <p id="first-letter-p">Erase una vez...</p>
+  
+  <h4>::selection</h4>
+  <p>Modifican como se ve el texto seleccionado</p>
+  <p>En este caso usare un fondo dorado para las palabras seleccionadas</p>
+  
+  <h3><strong>Comando Utilizado:</strong></h3>
+  <p>#selection-p::selection {
+  background-color: gold;
+  }</p>
+  
+  <p>Ejemplo:</p>
+  <p id="selection-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur eligendi eius unde magni voluptatibus aperiam ratione sunt hic explicabo, cum est et, neque corrupti dolorum dolore voluptate aliquid veniam.</p>
+  
+  <h4>::placeholder</h4>
+  <p>Modifica como se ve el placeholder dentro de un input</p>
+  <p>En este caso pondre una tipografia verdana en el placeholder de este campo de texto</p>
+  
+  <h3><strong>Comando Utilizado:</strong></h3>
+  <p>#placeholder-input::placeholder {
+  font: bold;
+  font-family: Verdana;
+  }</p>
+
+  <p>Ejemplo:</p>
+  <input type="text" id="placeholder-input" placeholder="Ingrese el texto aqui">
+
+  <h3>Contenido Dinamico</h3>
+  <p>Permiten insertar elementos dinamicos antes o despues del contenido real utilizando la propiedad content</p>
+
+  <h4>::before y ::after</h4>
+  <p>Mientras que before permite insertar elementos dinamicos antes del texto real, after permite insertar elementos dinamicos despues del texto real</p>
+
+  <p id="before-span">Jefferson</p>
+  
+  <p id="after-span">100</p>
+
+</body>
+</html>

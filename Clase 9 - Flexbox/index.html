@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <p>Flexbox es un modelo de alineacion basado en 1 dimension, es decir solo alinea los objetos de forma vertical o de forma horizontal (una a la vez)</p>
+    <p>Para activar la distribuicion flexbox solo se necesita configurar al contenedor padre para alinear segun flexbox, utilizamos el comando</p>
+    <p><strong>display: flex;</strong></p>
+    
+    <h2>Barra de navegacion</h2>
+    <nav class="flex" id="nav-1" style="justify-content: space-between;">
+        <span>Opcion 1</span>
+        <span>Opcion 2</span>
+        <span>Opcion 3</span>
+    </nav>
+
+    <p>Flexbox tiene varias configuraciones o atributos que permiten cambiar la forma en la que se ve flexbox como:</p>
+    
+    <h3>flex-direction</h3>
+    <p>La propiedad <strong>flex-direction</strong> configura el eje en el cual se desarrolla el flexbox (horizontal o vertical)</p>
+
+    <h2>Barra Horizontal</h2>
+    <p>En este caso para poner un flexbox horizontal usamos el valor row (fila) en la propiedad flex-direction</p>
+    <nav class="flex" id="nav-x">
+        <span>Opcion 1</span>
+        <span>Opcion 2</span>
+        <span>Opcion 3</span>
+        <span>Opcion 4</span>
+    </nav>
+
+    <h2>Barra Vertical</h2>
+    <p>En este caso para poner un flexbox horizontal usamos el valor column (columna) en la propiedad flex-direction</p>
+    <nav class="flex" id="nav-y" style="">
+        <span>Opcion 1</span>
+        <span>Opcion 2</span>
+        <span>Opcion 3</span>
+        <span>Opcion 4</span>
+    </nav>
+
+    <h3>justify-content</h3>
+    <p>La propiedad <strong>justify-content</strong> alinea y distribuye los objetos hijos del flex a traves de su eje principal</p>
+
+    <h3>align-items</h3>
+    <p>La propiedad <strong>align-items</strong> alinea los elementos hijos del flex a traves del eje perpendicular al eje principal</p>
+
+    <h3>flex-wrap</h3>
+    <p>La propiedad <strong>flex-warp</strong> permite que los elementos salten a una nueva linea si ya no entran en el contenedor</p>
+
+    <h3>flex-grow, flex-shrink, flex-basis</h3>
+    <p>Las propiedades <strong>flex-grow, flex-shrink y flex-basis</strong> permiten delimitar cuanto es el tamaño base de una etiqueta hija del flex, ademas de delimitar cuanto pueden crecer y cuanto pueden encogerse</p>
+
+    <h3>align-self</h3>
+    <p>La propiedad <strong>align-self</strong> permite controlar la alineacion vertical de los elementos hijos de forma independiente</p>
+</html>

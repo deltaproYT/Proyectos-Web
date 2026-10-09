@@ -1,0 +1,79 @@
+div[class*="box"] {
+  font-family: Arial;
+  background-color: aqua;
+}
+
+nav {
+  font-family: Georgia;
+}
+
+nav > div > p {
+  margin: 15px;
+  border: solid lightgreen 25px;
+}
+
+#item2 + li {
+  color: aquamarine;
+  margin-top: 20px;
+}
+
+#item7 ~ li {
+  color: chocolate;
+  margin-top: 5px;
+}
+
+#hover-div:hover {
+  background-color: red;
+  color: white;
+}
+
+#active-div:active {
+  background-color: lime;
+  color: black;
+}
+
+#focus-input:focus {
+  background-color: rgba(47, 255, 0, 0.2);
+  border: solid 1px rgb(255, 182, 46);
+}
+
+#first-last-ul > li:first-child {
+  background-color: purple;
+  color: white;
+}
+
+#first-last-ul > li:last-child {
+  background-color: yellow;
+}
+
+.nth-child-ul[id="nth-1"] li:nth-child(2) {
+  font-size: 20px;
+  color: burlywood
+}
+
+.nth-child-ul[id="nth-2"] li:nth-child(2n) {
+  font-size: 10px;
+  color: rosybrown
+}
+
+#first-letter-p::first-letter {
+  font-family: Arial;
+  font-size: 25px;
+}
+
+#selection-p::selection {
+  background-color: gold;
+}
+
+#placeholder-input::placeholder {
+  font: bold;
+  font-family: Verdana;
+}
+
+#before-span::before {
+  content: "Mr. ";
+}
+
+#after-span::after {
+  content: "$";
+}

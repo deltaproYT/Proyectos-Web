@@ -1,0 +1,18 @@
+span {
+    color: blueviolet;
+    font-family: Arial;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.resaltado {
+    background-color: greenyellow;
+}
+
+#especial {
+    font-style: italic;
+    text-decoration: underline;
+    display: flex;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Grid</title>
+</head>
+<body>
+    <h1>Grid</h1>
+    <p>El <strong>Grid</strong> es un sistema de alineación basado en 2 dimensiones (horizontal y vertical), en rasgos simples es una version mucho mas avanzada de flexbox, que en lugar de operar en un eje opera en 2 formando una cuadricula</p>
+    <p>Para activar el Grid se utiliza el atributo css display:</p>
+    <p><strong>display: grid;</strong></p>
+    
+    <h2>Cuadricula de Items</h2>
+    <div class="grid" id="div-1">
+        <p>item 1</p>
+        <p>item 2</p>
+        <p>item 3</p>
+        <p>item 4</p>
+    </div>
+
+    <h3>repeat()</h3>
+    <p>La funcion <strong>repeat()</strong> es importante, pues dentro de los atributos grid, facilitan el no repetir datos innecesariamente</p>
+    <p>Se usa mucho al crear las columnas y las filas, pues normalmente se declaran unas detras de otras (100px 20px 300px) pero en casos donde todas las columnas o filas son del mismo tamaño es mas facil utilizar el comando repeat; "grid-template-columns: repeat(3, 100px);" este comando crea 3 columnas de ancho 100px</p>
+
+    <h3>fr</h3>
+    <p>El grid añade una medida nueva conocida como <strong>fraccion o fr</strong>, siendo una unidad de medida flexible que se ajusta proporcionalmente al espacio de la cuadricula</p>
+
+    <h3>grid-template-columns y grid-template-rows</h3>
+    <p>Los atributos <strong>grid-template-columns y grid-template-rows</strong> son los atributos mas importantes dentro del grid, pues estos son los encargados de la creacion de las columnas y las filas dentro del grid</p>
+
+    <h3>minmax()</h3>
+    <p>La funcion <strong>minmax()</strong> es una funcion que permite establecer el maximo o minimo que puede crecer una cuadricula permitiendo que se adapte de forma automatica</p>
+
+    <h3>autofill y autofit</h3>
+    <p><strong>autofill y autofit</strong> son modificadores que se usan dentro de la funcion repeat() que sirven para crear columnas y filas de forma responsiva para ajustarse a las dimensiones de la pantalla </p>
+    <p>Mientras <strong>autofill</strong> utiliza columnas vacias para abarcar el ancho de la pantalla, <strong>autofit</strong> aumenta el ancho de las columnas ya existentes para abarcar el ancho de la pantalla</p>
+
+    <h3>gap</h3>
+    <p>El atributo <strong>gap</strong> se encarga de definir el espaciado que existe entre las celdas de la cuadricula sin afectar sus margenes o padding</p>
+
+    <h3>grid-column y grid-row</h3>
+    <p>Los atributos <strong>grid-column y grid-row</strong> permite posicionar o expandir un elemento hijo especificando las lineas de la cuadricula donde empieza y termina o utilizando la palabra clave <strong>span</strong> para indicar cuantas celdas abarcar</p>
+
+    <h3>grid-template-areas y grid area</h3>
+    <p>Los atributos <strong>grid-template-areas y grid area</strong> permiten organizar la interfaz asignando nombres visuales a las secciones</p>
+
+    <h3>subgrid</h3>
+    <p>El atributo <strong>subgrid</strong> Permite que una cuadricula anidada herede y respete exactamente las mismas lineas y pistas de su contenedor padre</p>
+
+</body>
+</html>
